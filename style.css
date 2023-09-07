@@ -110,19 +110,31 @@ padding-top: 10px;
 }
 
 .bottom-banner .user{
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     display: flex;
     margin-left: 2rem;
     align-items: center;
     font-family: "Roboto",sans-serif;
 }
 
+.bottom-banner .user div{
+    margin-left: 15px;
+}
+
+.bottom-banner .btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rebeccapurple; */
+}
+
 .bottom-banner .btns button{    
     border:none;
+    font-size: 20px;
     background-color: rgb(217 119 6);
-    border-radius: 5px;
-    width: 60px;
-    height: 25px;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
     font-family: "Roboto",sans-serif;
     color:snow;
     margin-left: 10px;
@@ -141,3 +153,102 @@ padding-top: 10px;
 
 
 /* Section */
+section{
+    margin: 20px 9px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.aside{
+   /* display: grid; */
+   /* background-color: rebeccapurple; */
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-between; */
+}
+
+.aside .two{
+margin-top: 20px;
+}
+
+.wrapper .title{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.cards{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card{
+    background-color: snow;
+    border-left: 4px solid rgb(217 119 6) ;
+    padding: 1.5rem;
+    border-radius: 5px;
+    width: 310px;
+    height: 170px;
+}
+
+.card-text p{
+    width: 220px;
+    font-size: 15px;
+    margin-block-start: 3px;
+    margin-block-end: 15px;
+}
+
+.card-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-icon div{
+
+    margin-left: 15px;
+}
+
+.panel{
+    background-color: snow;
+    padding:10px 20px;
+    border-radius: 5px;
+    width: 310px;
+}
+
+.panel-section{
+  
+    margin-block: 7px;
+}
+
+.panel-title{
+    margin-block:1px ;
+}
+
+
+.panel-text p{
+    width: 220px;
+    font-size: 13px;
+}
+
+.panel-section .user{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.panel-section .user img{
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+.panel-section .user span{
+    font-size: 10px;
+}
+
+.panel-section .user p{
+    font-size: 15px;
+    color: hwb(0 12% 87% / 0.857);
+}
