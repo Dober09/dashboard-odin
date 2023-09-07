@@ -9,27 +9,31 @@
 }
 
 body{
-    background-color: rgb(168, 162, 158);
+    /* background-color: rgb(168, 162, 158);
+     */
+     background-color: rgba(0, 0, 0, 0.531);
     height: 100vh;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 250px 1fr;
 }
 
 .side-nav{
-    background-color: rgb(217 119 6);   
+    background-color: snow;   
 }
+
+
 .side-nav .item a{
-    color:snow;
+    color:hwb(0 5% 95% / 0.634);
     font-family: 'Roboto',sans-serif;
     font-weight: bold;
-    margin-left: 3px;
+    margin-left: 4px;
 }
 
 .side-nav .items{
-    padding-left:14px;
+    padding-left:17px;
 }
 
 
@@ -39,10 +43,13 @@ body{
 }
 
 .items .top-items{
-    margin:  10px 0 ;
+    margin:  14px 0 ;
+}
+.top-items a{
+    font-size: 24px;
 }
 .middle-items{
-    margin-top: 1.5rem;
+    margin-top:2rem;
 }
 
 .bottom-items{
@@ -51,14 +58,14 @@ body{
 
 .middle-items .bottom-items, .item{
     margin: 13px 0;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 /* HEADER */
 
 header{
-    background-color: snow;
-    box-shadow: 1px 2px 4px black;
+    background-color: rgb(217 119 6);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.586);
 }
 
 .banner{
@@ -67,28 +74,33 @@ padding-top: 10px;
 .top-banner{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    /* gap: 40px; */
 }
 
 .top-banner .profile{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
+}
+
+.top-banner .profile div{
+    margin-left: 3rem;
 }
 
 .search{
     display: flex;
     align-items: center;
-    /* justify-content: space-bet; */
     padding-left: 2rem;
 }
 
 .search input{
     border: none;
-    background-color: rgb(168, 162, 158);
-    width: 300px;
+    background-color: rgba(0, 0, 0, 0.531);
+    width: 400px;
     height: 20px;
     border-radius: 20px;
+    margin-left: 20px;
     }
 
 .banner{
@@ -101,37 +113,47 @@ padding-top: 10px;
 
 .profile .name{
     font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    color: snow;
 }
 
  .banner .bottom-banner{
     margin: 15px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 
 .bottom-banner .user{
-    /* background-color: cadetblue; */
+    
     display: flex;
     margin-left: 2rem;
     align-items: center;
     font-family: "Roboto",sans-serif;
+    color: snow;
 }
 
 .bottom-banner .user div{
     margin-left: 15px;
 }
 
+.bottom-banner .user div p{
+    font-weight: 700;
+}
+
 .bottom-banner .btns{
+    /* background-color: rebeccapurple; */
+    justify-content: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* background-color: rebeccapurple; */
 }
 
 .bottom-banner .btns button{    
     border:none;
     font-size: 20px;
-    background-color: rgb(217 119 6);
+    background-color: rgba(0, 0, 0, 0.531);
     border-radius: 20px;
     width: 100px;
     height: 30px;
@@ -139,6 +161,7 @@ padding-top: 10px;
     color:snow;
     margin-left: 10px;
     cursor: pointer;
+    text-transform: capitalize;
 }
 
 
@@ -149,21 +172,18 @@ padding-top: 10px;
 }
 
 
-
-
-
 /* Section */
 section{
-    margin: 20px 9px;
+    margin: 30px ;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    /* background-color: rebeccapurple; */
     font-family: 'Roboto',sans-serif;
 }
 
 .aside{
    /* display: grid; */
-   /* background-color: rebeccapurple; */
    display: flex;
    flex-direction: column;
    /* justify-content: space-between; */
@@ -176,6 +196,7 @@ margin-top: 20px;
 .wrapper .title{
     margin-bottom: 10px;
     font-size: 12px;
+    color: snow;
 }
 
 .cards{
@@ -185,16 +206,17 @@ margin-top: 20px;
 }
 
 .card{
-    background-color: snow;
-    border-left: 4px solid rgb(217 119 6) ;
+    background-color:  rgb(217 119 6); 
+    border-left: 4px snow solid;
     padding: 1.5rem;
     border-radius: 5px;
     width: 310px;
-    height: 170px;
+    height: 160px;
+    color: snow;
 }
 
 .card-text p{
-    width: 220px;
+    width: 320px;
     font-size: 15px;
     margin-block-start: 3px;
     margin-block-end: 15px;
@@ -206,16 +228,17 @@ margin-top: 20px;
 }
 
 .card-icon div{
-
     margin-left: 15px;
 }
 
 .panel{
-    background-color: snow;
+    background-color: rgb(217 119 6) ;
     padding:10px 20px;
     border-radius: 5px;
-    width: 310px;
+    width: 290px;
+    color: snow;
 }
+
 
 .panel-section{
   
@@ -226,15 +249,20 @@ margin-top: 20px;
     margin-block:1px ;
 }
 
+hr{
+    background-color: rgba(0, 0, 0, 0.531);
+    height: 1px;
+    border: none;
+}
 
 .panel-text p{
-    width: 220px;
+    width: 239px;
     font-size: 13px;
 }
 
 .panel-section .user{
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 }
 
 .panel-section .user img{
@@ -250,5 +278,5 @@ margin-top: 20px;
 
 .panel-section .user p{
     font-size: 15px;
-    color: hwb(0 12% 87% / 0.857);
+    color: rgba(0, 0, 0, 0.531);
 }
